@@ -1,0 +1,23 @@
+.bg-gradiant {
+  height: 150vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #0f6d53 70%, white);
+}
+
+@media (max-width: 600px) {
+  .bg-gradiant{
+    height:500vh;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .bg-gradiant{
+    height:220vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  .about {
+    font-size: 1.2em;
+  }
+}
