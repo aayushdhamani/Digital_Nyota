@@ -6,16 +6,16 @@ const contact = () => {
   return (
     <>
    
-    <div class="bg-gradiant" >
-     <div className="container  fw-bold" style={{fontSize:'20px'}} >
-       <p class="contact text-center"style={{color:'white'}}>Contact Us</p> 
+  <div class="page page2">
+     <div className=" container  fw-bold" style={{fontSize:'20px'}} >
+       <p class="contact text-center"style={{color:'black'}}>Contact Us</p> 
 
      </div>
      <div className="row container mb-5" >
         <div className="col-md-6" style={{fontSize:'20px'}}>
-<p class="contact-text text-center "style={{color:'#ffffff'}}>Thank you for considering Digital Nyota</p>
+<p class="contact-text text-center "style={{color:'#0f6d53'}}>Thank you for considering Digital Nyota</p>
         </div>
-        <div className="container-form col-md-6" style={{color:'grey',marginTop:'75px',marginLeft:'px'}}>
+        <div className="container-form col-md-6" style={{backgroundColor:'#0f6d53',color:'white',marginTop:'75px',marginLeft:'px'}}>
         <form action="http://localhost:3000/DIGINVI/invitation/src/php/form.php" method="post">
   <div class="mb-3">
     <label for="name" class="form-label" >Name</label>
@@ -29,7 +29,7 @@ const contact = () => {
   <div class="mb-3">
     <label for="email" class="form-label">Email address</label>
     <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"/>
-    <div id="emailHelp" class="form-text" style={{color:'grey'}}>We'll never share your email with anyone else.</div>
+    <div id="emailHelp" class="form-text" style={{color:'white'}}>We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-4">
     <label for="Invitation" class="form-label">Invitation type</label>
@@ -46,7 +46,7 @@ const contact = () => {
      <div className=" wtsbtn container "style={{fontsize:'20px'}}>
       <a href="https://wa.me/8387801336?text=Hello%20from%20my%20website!" target="_blank"><button className="btn2 btn btn-success" ><FaWhatsapp/> Whatsapp us for more info</button></a>
      </div>
-    </div>
+     </div>
     </>
   )
 }

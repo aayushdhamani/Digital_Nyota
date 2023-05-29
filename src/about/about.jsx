@@ -3,11 +3,11 @@ import './about.css';
 
 const about = () => {
   return (
-    <div class="bg-gradiant" style={{fontsize:'20px'}}>
+    <div class="page page1" style={{fontsize:'20px'}}>
       <div className="container  fw-bold" style={{fontSize:'20px'}} >
-       <p class="contact text-center"style={{color:'white'}}>About Us</p> 
+       <p class="contact text-center"style={{color:'black'}}>About Us</p> 
      </div>
-     <div class="about container" style={{color:'white'}} >
+     <div class="about container" style={{color:'#0f6d53'}} >
      <p>Step into the enchanting world of Digital Nyota, where we weave magical tapestries of personalized and imaginative wedding video invitations for couples yearning to etch an indelible mark upon the hearts of their esteemed guests. Within our realm, we comprehend the intrinsic significance of fashioning a nuptial celebration that transcends the ordinary, one that commences with an invitation that tells a tale all its own.</p>
 <p>Traditionally, lovers would squander substantial sums on printing and dispatching paper invitations to their extensive list of attendees. Alas, we discerned that this antiquated process not only bore a burdensome expense but also resulted in prodigious wastage. Thus, we ventured forth, birthing a captivating and effortless avenue to summon the cherished souls who hold a place within your heart to partake in the paramount day of your lives—a wedding adorned with the artistry of video invitations.</p>
 <p>Our video invitations, exuding an aura of eco-consciousness, bestow upon you a splendid opportunity to unfold the chronicle of your eternal affection in a manner that paper-based missives could never aspire to. Hand in hand, we traverse this creative journey, deeply attuned to your unique style, proclivities, and aspirations, harnessing the talents of our ingenious coterie.</p>

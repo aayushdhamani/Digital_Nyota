@@ -1,7 +1,5 @@
-.bg-gradiant {
-  height: 150vh;
-  width: 100%;
-  background-image: linear-gradient(to bottom, #0f6d53 70%, white);
+.page1 {
+  height: 900px; 
 }
 
 @media (max-width: 600px) {

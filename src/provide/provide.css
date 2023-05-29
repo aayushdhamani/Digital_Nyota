@@ -1,0 +1,12 @@
+.page3 {
+  height: 6370px; /* Adjust the height for page 1 */
+}
+  .img {
+    display: none; /* Hide the image by default */
+  }
+  
+  @media (min-width: 768px) {
+    .img{
+      display: block; /* Show the image for screen sizes equal to or larger than 768px */
+    }
+  }
