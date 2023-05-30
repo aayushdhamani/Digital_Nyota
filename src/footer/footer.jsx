@@ -11,13 +11,13 @@ const footer = () => (
         <div className="container mb-5">
             <div className="row">
                 <div className="icons col-md-6 ">
-                    <FaInstagram class="icon instagram" />
-                    <FaWhatsapp class="icon whatsapp" />
-                    <FaPinterestP class="icon pinterest" />
+                    <FaInstagram className="icon instagram" />
+                    <FaWhatsapp className="icon whatsapp" />
+                    <FaPinterestP className="icon pinterest" />
 
                 </div>
                 <div className="col-md-6">
-                  <p class="footercon"><AiOutlineCopyrightCircle/> 2023 Digital Nyota All Rights Reserved.</p>
+                  <p className="footercon"><AiOutlineCopyrightCircle/> 2023 Digital Nyota All Rights Reserved.</p>
                 </div>
             </div>
         </div>
