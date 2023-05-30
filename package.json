@@ -12,7 +12,7 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
-    "react-vertical-timeline-component": "^1.0.7",
+    "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.0",
     "web-vitals": "^2.1.4"
