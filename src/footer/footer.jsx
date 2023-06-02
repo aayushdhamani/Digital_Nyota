@@ -8,7 +8,7 @@ import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 const footer = () => (
     <div>
         <div className="footer ">
-        <div className="container mb-5">
+        <div className="container my-5">
             <div className="row">
                 <div className="icons col-md-6 ">
                     <FaInstagram className="icon instagram" />

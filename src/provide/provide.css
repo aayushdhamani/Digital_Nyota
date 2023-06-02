@@ -1,6 +1,4 @@
-.page3 {
-  height: 6363px; /* Adjust the height for page 1 */
-}
+
   .img {
     display: none; /* Hide the image by default */
   }
@@ -10,3 +8,23 @@
       display: block; /* Show the image for screen sizes equal to or larger than 768px */
     }
   }
+   
+
+@media (max-width: 600px) {
+  .page3 {
+    height: 3865px; /* Adjust the height for page 1 */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .page3 {
+    height: 5650px; /* Adjust the height for page 1 */
+  }
+}
+
+@media (min-width: 1025px) {
+  .page3 {
+    height: 6363px; /* Adjust the height for page 1 */
+  }
+  
+}

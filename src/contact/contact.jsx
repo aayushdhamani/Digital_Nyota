@@ -16,7 +16,7 @@ const contact = () => {
 <p className="contact-text text-center "style={{color:'#0f6d53'}}>Thank you for considering Digital Nyota</p>
         </div>
         <div className="container-form col-md-6" style={{backgroundColor:'#0f6d53',color:'white',marginTop:'75px',marginLeft:'px'}}>
-        <form action="http://localhost:3000/DIGINVI/invitation/src/php/form.php" method="post">
+        <form action="/DIGINVI/invitation/src/php/form.php" method="post">
   <div className="mb-3">
     <label for="name" className="form-label" >Name</label>
     <input type="text" className="form-control" id="name" name="name" aria-describedby="emailHelp"/>

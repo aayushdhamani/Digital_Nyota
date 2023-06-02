@@ -9,12 +9,11 @@
 }
 
 .btn2:hover{
-    background-color: black;
+    background-color: yellow;
+    color:black;
 }
+
   @media (max-width: 600px) {
-    .bg-gradiant{
-        height:220vh;
-    }
  .contact{
     font-size:2.2em;
  }
@@ -26,14 +25,20 @@
  }
  .formbtn{
     margin-left:100px;
+    color:white;
  }
  .wtsbtn{
     padding-left:50px;
  }
- 
-  
+ .page2 {
+   height: 900px; /* Adjust the height for page 2 */
+ }
+ .btn2{
+   color:white;
+}
  
 }
+
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .contact{
@@ -42,10 +47,11 @@
   .contact-text{
       margin-top:100px;
       font-size:1.5em;
-
+     
   }
  .formbtn{
     margin-left:125px;
+    color:white;
  }
  .wtsbtn{
     padding-left:200px;
@@ -53,11 +59,16 @@
  .btn2{
     font-size:1.5em;
     border-radius: 15px;
+    color:white;
 }
+.page2 {
+   height: 800px; /* Adjust the height for page 2 */
+ }
+  
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     .contact{
         font-size:4em;
      }
@@ -78,4 +89,8 @@
     font-size:2em;
     border-radius: 20px;
 }
+.page2 {
+   height: 1000px; /* Adjust the height for page 2 */
+ }
+  
 }

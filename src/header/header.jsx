@@ -24,7 +24,7 @@ const header = () => {
           <a className="nav-link active" style={{marginRight:'100px'}} aria-current="page" href="/contact">Contact us</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/whatweprovide">What we provide</a>
+          <a className="nav-link active" aria-current="page" href="/whatweprovide">What We Provide</a>
         </li>
        
       </ul>
