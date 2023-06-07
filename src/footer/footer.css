@@ -2,23 +2,21 @@
 .icon{
     width:40px;
     height:30px;
+    color:#0f6d53;
 }
 .instagram:hover{
   cursor: pointer;
-    color:#0f6d53;
 }
 .whatsapp:hover{
     cursor: pointer;
-    color:#0f6d53;
 }
 .pinterest:hover{
     cursor: pointer;
-    color:#0f6d53;
 }
 
 @media (max-width: 600px) {
     .icons{
-        margin-bottom:20px
+        margin-bottom:20px;
     }
     /* .footer{
         margin-top:70px;
@@ -35,10 +33,10 @@
 
 @media (min-width: 1025px) {
    .footercon{
-    margin-left:150px;
+    margin-left:270px;
    }
    .footer{
-    margin-top:35px;
+    margin-top:10px;
    }
    .btn .btn-success {
     margin-Left:'250px';

@@ -1,19 +1,13 @@
  
 
 @media (max-width: 600px) {
-  .bg-gradiant{
-    height:500vh;
-  }
   .page1 {
-    height: 1900px; 
+    height: 2500px; 
   }
   
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
-  .bg-gradiant{
-    height:220vh;
-  }
   .page1 {
     height: 950px; 
   }

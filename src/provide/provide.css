@@ -8,6 +8,10 @@
       display: block; /* Show the image for screen sizes equal to or larger than 768px */
     }
   }
+  .centered-button {
+    display: block;
+    margin: 0 auto; /* This centers the button horizontally */
+  }
    
 
 @media (max-width: 600px) {
@@ -24,7 +28,7 @@
 
 @media (min-width: 1025px) {
   .page3 {
-    height: 6363px; /* Adjust the height for page 1 */
+    height: 6900px; 
   }
   
 }

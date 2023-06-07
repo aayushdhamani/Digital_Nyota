@@ -7,8 +7,8 @@ import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 
 const footer = () => (
     <div>
-        <div className="footer ">
-        <div className="container my-5">
+        <div className="footer">
+        <div className="container ">
             <div className="row">
                 <div className="icons col-md-6 ">
                     <FaInstagram className="icon instagram" />
@@ -16,7 +16,7 @@ const footer = () => (
                     <FaPinterestP className="icon pinterest" />
 
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6" style={{color:"#0f6d53"}}>
                   <p className="footercon"><AiOutlineCopyrightCircle/> 2023 Digital Nyota All Rights Reserved.</p>
                 </div>
             </div>
@@ -26,3 +26,5 @@ const footer = () => (
 )
 
 export default footer
+
+
