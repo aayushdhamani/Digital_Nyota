@@ -18,48 +18,58 @@ import V14 from './videos/V14.mp4'
 
 
 const Save = () => {
+  const videoRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+  ];
 
-        let Images=[{
-            id:1,
-            img1:'IMAGE/SaveImages/img1.jpg'
-        },{
-            id:2,
-            img1:'IMAGE/SaveImages/img2.jpg'
-        },{
-            id:3,
-            img1:'IMAGE/SaveImages/img3.jpg'
-        },{
-            id:4,
-            img1:'IMAGE/SaveImages/img4.jpg'
-        },{
-            id:5,
-            img1:'IMAGE/SaveImages/img5.jpg'
-        }];
-   
-  const videoRef1 = useRef(null);
-  const videoRef2 = useRef(null);
-  const videoRef3 = useRef(null);
-  const videoRef4 = useRef(null);
-  const videoRef5 = useRef(null);
-  const videoRef6 = useRef(null);
-  const videoRef7 = useRef(null);
-  const videoRef8 = useRef(null);
-  const videoRef9 = useRef(null);
-  const videoRef10 = useRef(null);
-  const videoRef11 = useRef(null);
-  const videoRef12 = useRef(null);
-  const videoRef13 = useRef(null);
-  const videoRef14 = useRef(null);
-
-  const handleMouseEnter = (videoRef) => {
-    videoRef.current.play();
+  const handleMouseEnter = (index) => {
+    videoRefs[index].current.play();
   };
 
-
-  const handleMouseLeave = (videoRef) => {
-    videoRef.current.pause();
-    videoRef.current.currentTime = 0;
+  const handleMouseLeave = (index) => {
+    const videoRef = videoRefs[index].current;
+    videoRef.pause();
+    videoRef.currentTime = 0;
   };
+
+  let Images = [
+    {
+      id: 1,
+      img1: 'IMAGE/SaveImages/img1.jpg',
+    },
+    {
+      id: 2,
+      img1: 'IMAGE/SaveImages/img2.jpg',
+    },
+    {
+      id: 3,
+      img1: 'IMAGE/SaveImages/img3.jpg',
+    },
+    {
+      id: 4,
+      img1: 'IMAGE/SaveImages/img4.jpg',
+    },
+    {
+      id: 5,
+      img1: 'IMAGE/SaveImages/img5.jpg',
+    },
+  ];
+
+  const videos = [V1, V2, V3, V14, V5, V6, V7, V8, V9, V10, V11, V12, V13, V4];
+
 
   return (
     <div className="page page5">
@@ -72,83 +82,21 @@ const Save = () => {
           </p>
         </div>
      
-<div className="container">
-
-
-      <div className="row delicacies-row">
-        <div onMouseEnter={() => handleMouseEnter(videoRef1)} onMouseLeave={() => handleMouseLeave(videoRef1)}  className="col-sm-4 col-md-3 delicacy" >
-          <video ref={videoRef1} className='video' width="216" height="384"    >
-            <source src={V1} type="video/mp4" />
-          </video>
+        <div className="container">
+        <div className="row delicacies-row">
+          {videos.map((video, index) => (
+            <div
+              key={index}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
+              className="col-sm-4 col-md-3 delicacy"
+            >
+              <video ref={videoRefs[index]} className="video" width="216" height="384">
+                <source src={video} type="video/mp4" />
+              </video>
+            </div>
+          ))}
         </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef2)} onMouseLeave={() => handleMouseLeave(videoRef2)}  className="col-sm-4 col-md-3 delicacy" >
-          <video ref={videoRef2} className='video' width="216" height="384"    >
-            <source src={V2} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef3)} onMouseLeave={() => handleMouseLeave(videoRef3)}  className="col-sm-4 col-md-3 delicacy" >
-          <video ref={videoRef3} className='video' width="216" height="384"    >
-            <source src={V3} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef14)} onMouseLeave={() => handleMouseLeave(videoRef14)}  className="col-sm-4 col-md-3 delicacy" >
-          <video ref={videoRef14} className='video' width="216" height="384"    >
-            <source src={V14} type="video/mp4" />
-          </video>
-        </div>
-
-     
-        <div onMouseEnter={() => handleMouseEnter(videoRef5)} onMouseLeave={() => handleMouseLeave(videoRef5)}  className="col-sm-4 col-md-4 delicacy" >
-          <video ref={videoRef5} className='video' width="216" height="384"    >
-            <source src={V5} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef6)} onMouseLeave={() => handleMouseLeave(videoRef6)}  className="col-sm-4 col-md-4 delicacy" >
-          <video ref={videoRef6} className='video' width="216" height="384"    >
-            <source src={V6} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef7)} onMouseLeave={() => handleMouseLeave(videoRef7)}  className="col-sm-4 col-md-4 delicacy" >
-          <video ref={videoRef7} className='video' width="216" height="384"    >
-            <source src={V7} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef8)} onMouseLeave={() => handleMouseLeave(videoRef8)}  className="col-sm-4 col-md-4 delicacy" >
-            <video ref={videoRef8} className='video' width="216" height="384"    >
-            <source src={V8} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef9)} onMouseLeave={() => handleMouseLeave(videoRef9)}  className="col-sm-4 col-md-4 delicacy" >
-          <video ref={videoRef9} className='video' width="216" height="384"    >
-            <source src={V9} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef10)} onMouseLeave={() => handleMouseLeave(videoRef10)}  className="col-sm-4 col-md-4 delicacy" >
-          <video ref={videoRef10} className='video' width="216" height="384"    >
-            <source src={V10} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef11)} onMouseLeave={() => handleMouseLeave(videoRef11)}  className="col-sm-4 col-md-4 delicacy" >
-          <video ref={videoRef11} className='video' width="216" height="384"    >
-            <source src={V11} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef12)} onMouseLeave={() => handleMouseLeave(videoRef12)}  className="col-sm-4 col-md-4 delicacy" >
-          <video ref={videoRef12} className='video' width="216" height="384"    >
-            <source src={V12} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef13)} onMouseLeave={() => handleMouseLeave(videoRef13)}  className="col-sm-4 col-md-4 delicacy" >
-          <video ref={videoRef13} className='video' width="216" height="384"    >
-            <source src={V13} type="video/mp4" />
-          </video>
-        </div>
-        <div onMouseEnter={() => handleMouseEnter(videoRef4)} onMouseLeave={() => handleMouseLeave(videoRef4)}  className="col-sm-4 col-md-4 delicacy" >
-          <video ref={videoRef4} className='video' width="216" height="384"    >
-              <source src={V4} type="video/mp4" />
-          </video>
-        </div>
-      </div>
       </div>
       <div style={{ fontSize: "20px" }}>
           <p

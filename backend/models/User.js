@@ -7,7 +7,7 @@ const UserSchema = new Schema({
         required:true
     },
     mobile_no:{
-        type:String,
+        type:Number,
         required:true
     },
     Email_address:{

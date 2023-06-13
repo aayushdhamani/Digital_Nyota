@@ -8,7 +8,7 @@ router.post(
   [
     body("name", "please enter a valid name").isLength({ min: 5 }),
     body("mobile_no", "Mobile must be of 10 digits").isLength({ min: 10 }),
-    body("email", "enter the valid email").isEmail(),
+    // body("email", "enter the valid email").isEmail()
   ],
   (req, res) => {
     const errors = validationResult(req);
@@ -24,6 +24,7 @@ User.create({
 
 }).then((user)=>{
     res.json(user)
+    console.log(user);
 });
     
   }

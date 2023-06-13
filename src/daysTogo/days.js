@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import "./days.css";
 import Imgcard from "./imgcard";
+
 function days() {
+  
   let countdown1 = [
     {
       id: 1,
@@ -82,7 +84,7 @@ function days() {
     {
       id: 7,
       img3: "IMAGE/images/P2day7.jpg",
-    },
+    }
   ];
 
   return (

@@ -1,0 +1,17 @@
+  
+@media (max-width: 600px) {
+    .groom{
+        padding-left: 20px;
+    }
+   }
+   
+   @media (min-width: 601px) and (max-width: 1024px) {
+    
+   }
+   
+   @media (min-width: 1025px) {
+   .page7{
+    height:625px;
+   }
+   
+   }

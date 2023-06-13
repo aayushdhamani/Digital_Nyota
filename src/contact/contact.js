@@ -7,16 +7,55 @@ import { FaWhatsapp } from "react-icons/fa";
 const Contact = () => {
  
   const [user,setUser]=useState({
-    name:"",number:"",email:"",Invitation:"",comments:""
+    name:"",password:"",email:"",invitation_type:"",comments:""
   });
-  
+  console.log(user);
   let name,value;
   const handleInputs=(e)=>{
   console.log(e);
-  name=e.target.name;
-  value=e.target.value;
+  // name=e.target.name;
+  // value=e.target.value;
+  const {name, value}=e.target
   
   setUser({...user,[name]:value});
+  }
+  const hittingData=(e)=>{
+    e.preventDefault();
+    // debugger;
+    const{name,password, email, invitation_type,comments}=user;
+        fetch(`https://therailicious.com/api/notes/addnote`, {
+         method: "POST",
+         headers: {
+           "content-type": "application/json"
+         },
+   
+         body: JSON.stringify(
+           {
+            name,email,password
+           })
+       })
+   
+         .then(response => response.json())
+         .then(response => {
+   
+           if (!response?.success) {
+             throw Error(response.error)
+   
+           }
+          //  console.log(response);
+          //  console.log(response);
+          //  toast.success(response?.message)
+           // setMessage(response);
+          //  navigate("/sign-in")
+   
+         })
+         .catch((error) => {
+          //  console.log(error);
+          //  toast.error(error?.message);
+   
+         });
+
+    
   }
   return (
     <>
@@ -45,7 +84,7 @@ const Contact = () => {
               marginLeft: "px",
             }}
           >
-            <form >
+            <form  onSubmit={hittingData}>
               <div className="mb-3">
                 <label for="name" className="form-label">
                   Name
@@ -67,9 +106,9 @@ const Contact = () => {
                 <input
                   type="integer"
                   className="form-control"
-                  id="number"
-                  name="number"
-                  value={user.number}
+                  id="password"
+                  name="password"
+                  value={user.password}
                   onChange={handleInputs}
                   aria-describedby="emailHelp"
                 />
@@ -102,9 +141,9 @@ const Contact = () => {
                 <input
                   type="text"
                   className="form-control"
-                  id="Invitation"
-                  name="Invitation"
-                  value={user.Invitation}
+                  id="invitation_type"
+                  name="invitation_type"
+                  value={user.invitation_type}
                   onChange={handleInputs}
                   aria-describedby="emailHelp"
                 />

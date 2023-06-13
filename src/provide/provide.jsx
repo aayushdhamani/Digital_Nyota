@@ -54,7 +54,7 @@ const provide = () => {
     <p>
     Planning the perfect wedding wardrobe is an essential part of the wedding planning process. With so many details to consider, it's a relief to have a professional wedding wardrobe planner to help make the process a breeze! From selecting the perfect dress to accessorizing with the right jewellery and shoes, we've got you covered!
     </p>
-    <button className="centered-button btn btn-success my-2" > View More</button>
+    <a style={{textDecoration:"None"}} href="/wardrobe"><button className="centered-button btn btn-success my-2" > View More</button></a>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -68,7 +68,7 @@ const provide = () => {
     <p>
     Leave a lasting impression on your guests with our personalized wedding invitation video. Our expert editors create a video that perfectly captures the essence of your love story and gives your guests all the important information about your wedding day.
     </p>
-    <button className="centered-button btn btn-success my-2" > View More</button>
+    <a style={{textDecoration:"None"}} href="/wedding"><button className="centered-button btn btn-success my-2" > View More</button></a>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
@@ -82,7 +82,7 @@ const provide = () => {
     <p>
     Our skilled designers are capable of producing a distinctive and customized logo that embodies you and your partner. We will collaborate closely with you to comprehend your preferences and aesthetics, making a distinct design that is tailored to your needs. This exceptional design can be utilized across all your wedding-related items, such as invitations, thank-you cards, and more.
     </p>
-    <button className="centered-button btn btn-success my-2" > View More</button>
+    <a style={{textDecoration:"None"}} href="/couple"><button className="centered-button btn btn-success my-2" > View More</button></a>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
@@ -96,7 +96,7 @@ const provide = () => {
     <p>
     Your taste and proclivities before crafting a design that accurately conveys the spirit of your big day. Looking for a stunning PDF invitation that truly reflects your unique wedding style and personality? Look no further than our team of expert designers! We pride ourselves on our creativity and attention to detail, working closely with you to bring your vision to life. From classic elegance to whimsical charm, we'll help you create a one-of-a-kind invitation that will leave a lasting impression on all your guests.
     </p>
-    <button className="centered-button btn btn-success my-2" > View More</button>
+    <a style={{textDecoration:"None"}} href="/pdf"><button className="centered-button btn btn-success my-2" > View More</button></a>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
@@ -110,7 +110,7 @@ const provide = () => {
     <p>
     Inject some creative flair into your wedding invitations with our one-of-a-kind customized couple caricatures! Our talented team will expertly craft a playful and charismatic caricature of you and your significant other, reflecting your distinct personalities and tastes. You can flaunt your caricature on all your wedding stationery and ensure that your guests are impressed from start to finish!
     </p>
-    <button className="centered-button btn btn-success my-2" > View More</button>
+    <a style={{textDecoration:"None"}} href="/caricature"><button className="centered-button btn btn-success my-2" > View More</button></a>
   </VerticalTimelineElement>
   
   <VerticalTimelineElement
@@ -125,7 +125,7 @@ const provide = () => {
     <p>
     Create a warm welcome for your loved ones with the best House warming Invitations in town! Whether you’re inviting your family, friends, or colleagues, make sure to make an impression with our beautiful and unique designs. Let us help you create the perfect House warming Invitation that will leave a lasting memory for all your special guests!
     </p>
-    <button className="centered-button btn btn-success my-2" > View More</button>
+    <a style={{textDecoration:"None"}} href="/housewarming"><button className="centered-button btn btn-success my-2" > View More</button></a>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -139,7 +139,7 @@ const provide = () => {
     <p>
     Make your special day even more special with the best anniversary invitation in town! We understand how important your special day is to you, and that's why we strive to make the best anniversary invitation that will make your day memorable for a lifetime. Our team of experts uses their creative minds and artistic vision to craft unique designs that will make your anniversary celebration one to remember. So don't hesitate - let us help you make the most of your special day!
     </p>
-    <button className="centered-button btn btn-success my-2" > View More</button>
+    <a style={{textDecoration:"None"}} href="/anniversary"><button className="centered-button btn btn-success my-2" > View More</button></a>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -153,7 +153,7 @@ const provide = () => {
     <p>
     From classic and timeless designs to contemporary and modern, we have something to suit every style and budget. Our expert team of designers is here to make sure your invitation is one-of-a-kind and makes a lasting impression. Let us help you create the perfect Engagement Invitation that will leave your guests in awe!
     </p>
-    <button className="centered-button btn btn-success my-2" > View More</button>
+    <a style={{textDecoration:"None"}} href="/engagement"><button className="centered-button btn btn-success my-2" > View More</button></a>
   </VerticalTimelineElement>
 </VerticalTimeline>
 
