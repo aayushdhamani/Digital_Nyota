@@ -1,0 +1,22 @@
+
+  
+@media (max-width: 600px) {
+    .page13{
+     height:7400px;
+    }
+    
+   }
+   
+   @media (min-width: 601px) and (max-width: 1024px) {
+     .page13{
+         height:3550px;
+     }
+     
+   }
+   
+   @media (min-width: 1025px) {
+    .page13{
+     height:3700px;
+    }
+    
+   }

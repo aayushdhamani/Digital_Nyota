@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './wardrobe.css';
 import img from './groom.jpg';
 
-function Wardrobe ()  {
+const Wardrobes = () => {
     const [isHovered, setIsHovered] = useState(false);
   
     const handleMouseEnter = () => {
@@ -13,7 +13,7 @@ function Wardrobe ()  {
       setIsHovered(false);
     };
   return (
-      <div className="page page7">
+        <div className="page page7">
         <div className=" container">
 
        <div className="row">
@@ -34,7 +34,8 @@ function Wardrobe ()  {
       </div>
       </div>
     </div>
+
   )
 }
 
-export default Wardrobe
+export default Wardrobes

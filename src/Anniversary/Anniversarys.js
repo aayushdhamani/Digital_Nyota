@@ -1,27 +1,23 @@
 import React, { useRef } from 'react';
-import './engagement.css';
+import './anniversary.css';
 
-import V1 from './video.mp4';
+import V1 from './video.mp4'; 
+const Anniversarys = () => {
+    const videoRef1 = useRef(null);
 
-
-function Engagement  ()  {
-
-  const videoRef1 = useRef(null);
-
-const handleMouseEnter = (videoRef) => {
-    videoRef.current.play();
-  };
-
-
-  const handleMouseLeave = (videoRef) => {
-    videoRef.current.pause();
-    videoRef.current.currentTime = 0;
-  };
-
+    const handleMouseEnter = (videoRef) => {
+        videoRef.current.play();
+      };
+    
+    
+      const handleMouseLeave = (videoRef) => {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+      };
   return (
-   
-      <div className="page page9">
-<div className=" container">
+    <div>
+       <div className="page page8">
+            <div className=" container">
 
           <div className="row">
 
@@ -36,8 +32,9 @@ const handleMouseEnter = (videoRef) => {
             </div>
             </div>
             </div>
-      </div>
+        </div>
+    </div>
   )
 }
 
-export default Engagement
+export default Anniversarys

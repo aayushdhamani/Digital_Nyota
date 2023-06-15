@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const Contact = () => {
  
   const [user,setUser]=useState({
-    name:"",password:"",email:"",invitation_type:"",comments:""
+    name:"",contactNo:"",email:"",title:"",discription:""
   });
   console.log(user);
   let name,value;
@@ -22,16 +22,18 @@ const Contact = () => {
   const hittingData=(e)=>{
     e.preventDefault();
     // debugger;
-    const{name,password, email, invitation_type,comments}=user;
-        fetch(`https://therailicious.com/api/notes/addnote`, {
+    const{name,contactNo, email, title,discription}=user;
+        fetch(`https://backend-production-e1c2.up.railway.app/api/notes/addnote`, {
          method: "POST",
          headers: {
-           "content-type": "application/json"
+           "content-type": "application/json",
+           "Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQ4YWJjYzJmNzQ1ZTk3YjkxYjAxYjE1In0sImlhdCI6MTY4NjgxMzkxNX0.dCi23BNy9lQfrZH4i9d8AbubYEBv45SxAMDspoRtC0M"
+
          },
    
          body: JSON.stringify(
            {
-            name,email,password
+            name,contactNo, email, title,discription
            })
        })
    
@@ -106,9 +108,9 @@ const Contact = () => {
                 <input
                   type="integer"
                   className="form-control"
-                  id="password"
-                  name="password"
-                  value={user.password}
+                  id="contactNo"
+                  name="contactNo"
+                  value={user.contactNo}
                   onChange={handleInputs}
                   aria-describedby="emailHelp"
                 />
@@ -142,8 +144,8 @@ const Contact = () => {
                   type="text"
                   className="form-control"
                   id="invitation_type"
-                  name="invitation_type"
-                  value={user.invitation_type}
+                  name="title"
+                  value={user.title}
                   onChange={handleInputs}
                   aria-describedby="emailHelp"
                 />
@@ -153,8 +155,8 @@ const Contact = () => {
                   className="form-control"
                   placeholder="Leave a comment here"
                   id="comments"
-                  name="comments"
-                  value={user.comments}
+                  name="discription"
+                  value={user.discription}
                   onChange={handleInputs}
                 ></textarea>
                 <label for="floatingTextarea" style={{ color: "grey" }}>
