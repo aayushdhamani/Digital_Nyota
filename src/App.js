@@ -11,13 +11,13 @@ import Anniversary from './Anniversary/Anniversarys.js';
 import Engagement from './engagement/Engagements.js';
 import Pdf from './pdf/pdf.js';
 import Housewarming from './housewarming/Homewarming';
-import Caricature from './caricature/caricature';
 import Couple from './couple/Couples';
-import Wedding from './wedding/wedding.js';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Days from "./daysTogo/days.js";
 import Dayss from "./daysTogo/Dayss";
+import Weddingss from "./wedding/Weddingss";
+import Caricatur from "./caricature/Caricatur";
 
 {/* <Days */}
 function App() {
@@ -37,10 +37,11 @@ function App() {
             <Route  path="/anniversary" element={<Anniversary />} />
             <Route  path="/engagement" element={<Engagement />} />
             <Route  path="/pdf" element={<Pdf />} />
-            <Route  path="/housewaming" element={<Housewarming />} />
-            <Route  path="/caricature" element={<Caricature />} />
+            <Route  path="/housewarming" element={<Housewarming />} />
+            <Route  path="/caricature" element={<Caricatur />} />
             <Route  path="/couple" element={<Couple />} />
-            <Route  path="/wedding" element={<Wedding />} />
+            <Route  path="/wedding" element={<Weddingss />} />
+
         </Routes>
       </BrowserRouter>
       <Footer />

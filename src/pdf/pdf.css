@@ -1,22 +1,25 @@
+.pdf-container {
+  min-height: 80vh;
+}
 
-  
-@media (max-width: 600px) {
-    .page4{
-     height:7400px;
-    }
-    
-   }
-   
-   @media (min-width: 601px) and (max-width: 1024px) {
-     .page4{
-         height:3550px;
-     }
-     
-   }
-   
-   @media (min-width: 1025px) {
-    .page11{
-     height:3700px;
-    }
-    
-   }
+.pdf-pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pdf-page {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pdf-iframe {
+  width: 100%;
+  height: 500px; /* Increase the height value as desired */
+  border: none;
+}
+
+

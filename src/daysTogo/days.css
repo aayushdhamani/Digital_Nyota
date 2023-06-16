@@ -24,4 +24,20 @@
    .row{
     padding-left:65px;
   }
+  
   }
+
+  .image-container {
+    max-width: 280px; /* Set the maximum width of the image container */
+  }
+  
+  .responsive-image {
+    /* width: 100%; Set width to 100% of the container */
+    height: auto; /* Allow the height to adjust automatically */
+    transition: transform 0.3s; /* Add a transition effect to the transform property */
+  }
+  
+  .responsive-image:hover {
+    transform: translateY(-10px); /* Move the image up by 10 pixels on hover */
+  }
+  

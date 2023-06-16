@@ -1,5 +1,13 @@
 
+.scrollable-container {
+   overflow-x: auto;
+   white-space: nowrap;
+   padding: 20px 0;
+ }
  
+ .page12 {
+   display: inline-block;
+ }
    @media (max-width: 600px) {
  
    
@@ -10,8 +18,31 @@
  }
  
  @media (min-width: 1024px) {
-    .page6{
-    height:670px;
+    .page12{
+    height:200px;
     }
  }
+
+ .scrollable-container {
+  overflow-x: scroll;
+}
+
+.page12 {
+  display: flex;
+}
+
+.page12::-webkit-scrollbar {
+  height: 8px;
+  background-color: #f5f5f5;
+}
+
+.page12::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+.page12::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
  
