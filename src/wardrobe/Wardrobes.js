@@ -44,7 +44,7 @@ const Wardrobes = () => {
 {data?.map((harsh, index) => {
   console.log(harsh?.image);
   return (
-    <div className="d-flex column m-4">
+    <div className=" ward d-flex column m-4">
       <img
         alt="not found"
         width={"250px"}

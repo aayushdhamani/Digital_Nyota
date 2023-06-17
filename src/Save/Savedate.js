@@ -152,7 +152,7 @@ const Savedate = () => {
         <div className="d-flex flex-wrap justify-content-between align-items-center p-4">
           {data?.map((harsh, index) => (
             <div
-              className="d-flex flex-column my-5"
+              className=" save d-flex flex-column my-5"
               key={index}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
@@ -186,7 +186,7 @@ const Savedate = () => {
 {datas?.map((harsh, index) => {
   console.log(harsh?.image);
   return (
-    <div className="d-flex column m-4">
+    <div className=" save2 d-flex column m-4">
       <img
         alt="not found"
         width={"250px"}

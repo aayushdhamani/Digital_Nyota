@@ -146,7 +146,7 @@ const Dayss = () => {
 {data?.map((harsh, index) => {
   console.log(harsh?.image);
   return (
-    <div className="d-flex column m-4">
+    <div className="day d-flex column m-4">
       <img
         alt="not found"
         width={"250px"}
@@ -175,7 +175,7 @@ const Dayss = () => {
     return (
 
       
-        <div  className="  d-flex column m-4">
+        <div  className="day d-flex column m-4">
 
             <img alt="not found" width={"250px"}
         height={"auto"}

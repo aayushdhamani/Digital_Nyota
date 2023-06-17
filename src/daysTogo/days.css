@@ -2,9 +2,11 @@
   
 @media (max-width: 600px) {
    .page4{
-    height:1500px;
+    height:6500px;
    }
-   
+   .day{
+    padding-left:10px;
+  }
   }
   
   @media (min-width: 601px) and (max-width: 1024px) {
@@ -21,7 +23,7 @@
    .heading{
     font-Size:2.2em;
    }
-   .row{
+   .day{
     padding-left:65px;
   }
   
