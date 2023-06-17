@@ -1,38 +1,79 @@
-import React, { useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './anniversary.css';
 
-import V1 from './video.mp4'; 
+// import V1 from './video.mp4'; 
 const Anniversarys = () => {
-    const videoRef1 = useRef(null);
+  const [data,SetData]=useState([])
+  const videoRefs = useRef([]);
+  const debounceTimeout = useRef(null);
 
-    const handleMouseEnter = (videoRef) => {
-        videoRef.current.play();
-      };
-    
-    
-      const handleMouseLeave = (videoRef) => {
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
-      };
+  useEffect(()=>{
+    fetch(`
+    https://backend-production-e1c2.up.railway.app/api/video/getallvideo3`, {
+  
+    method: "GET",
+    headers: {
+        "content-type": "application/json",
+        'Authorization':"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQ4YWJjYzJmNzQ1ZTk3YjkxYjAxYjE1In0sImlhdCI6MTY4NjgxMzkxNX0.dCi23BNy9lQfrZH4i9d8AbubYEBv45SxAMDspoRtC0M"
+  
+    },
+  })
+    .then(response => response.json())
+    .then(response => {
+      // dispatch(datasImage(response))
+        SetData(response?.videos);
+        console.log(response);
+    })
+    .catch(error => {
+    });
+  },[])
+  const handleMouseEnter = index => {
+      const videoRef = videoRefs.current[index];
+      clearTimeout(debounceTimeout.current);
+      videoRef.currentTime = 0;
+      debounceTimeout.current = setTimeout(() => {
+        videoRef.play().catch(error => {
+          console.log(error);
+        });
+      }, 300);
+    };
+  
+    const handleMouseLeave = index => {
+      const videoRef = videoRefs.current[index];
+      clearTimeout(debounceTimeout.current);
+      videoRef.pause();
+      videoRef.currentTime = 0;
+    };
   return (
     <div>
        <div className="page page8">
-            <div className=" container">
-
-          <div className="row">
-
-         
-            <div className=" my-5 d-flex col-md-4">
-
-        <div onMouseEnter={() => handleMouseEnter(videoRef1)} onMouseLeave={() => handleMouseLeave(videoRef1)}  className="col-sm-4 col-md-3 delicacy" >
-          <video ref={videoRef1} className='video' width="216" height="384"    >
-            <source src={V1} type="video/mp4" />
-          </video>
-        </div>
-            </div>
-            </div>
-            </div>
-        </div>
+       <div className="container d-flex flex-wrap justify-content-between align-items-center">
+    {data?.map((harsh, index) => (
+ <div
+ className="row d-flex flex-column my-5 col-md-4"
+ key={index}
+ onMouseEnter={() => handleMouseEnter(index)}
+ onMouseLeave={() => handleMouseLeave(index)}
+ 
+>
+ <video
+//  className="card"
+   ref={ref => (videoRefs.current[index] = ref)}
+   width="300px"
+   height="450px"
+  
+ >
+   <source
+   
+     src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}
+     type="video/mp4"
+   />
+   Your browser does not support the video tag.
+ </video>
+</div>
+))}
+    </div>
+    </div>
     </div>
   )
 }

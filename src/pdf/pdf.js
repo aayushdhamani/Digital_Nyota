@@ -8,6 +8,8 @@ import LocalPdf5 from './pdf5.pdf';
 
 const Pdf = () => {
   return (
+    <div className="page page16">
+
     <div className="pdf-container">
       <div className="pdf-pages container">
         <div className="pdf-page col-sm-6 col-md-4 col-lg-3 p-5">
@@ -26,6 +28,7 @@ const Pdf = () => {
           <iframe src={LocalPdf5} title="PDF Viewer" className="pdf-iframe"></iframe>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -7,6 +7,10 @@ import img1 from './9.jpg';
 import { RxCountdownTimer } from 'react-icons/rx';
 import { MdInsertInvitation } from 'react-icons/md';
 import { BsHouseDoor } from 'react-icons/bs';
+import WI from './WeddingInvitation.png'
+import CD from './Coutdown.png';
+import SD from './Save the date.png';
+import WR from './Wardrobe planner.png';
 
 const provide = () => {
   return (
@@ -22,7 +26,7 @@ const provide = () => {
    
   >
     <h3 className="vertical-timeline-element-title mb-2">Countdown (Days to go)</h3>
-    <img className="img" src={img1} alt="" style={{width:'450px',height:'300px'}}/>
+    <img className="img" src={CD} alt="" style={{width:'450px',height:'300px'}}/>
     <p>
     Counting down the days to the most precious day of our lives! 💍 With only [# Days Togo] until the big day, we at DIGITAL NYOTA are ready to make your wedding day countdown an extraordinary one! We specialize in creating unique and elegant wedding day countdowns that perfectly capture the joy and excitement of this special moment. Let us help you create the best wedding day countdown of your life!
     </p>
@@ -36,7 +40,7 @@ const provide = () => {
     icon={<MdInsertInvitation/>}
   >
     <h3 className="vertical-timeline-element-title mb-2">Save the Date video </h3>
-    <img className="img" src={img1} alt="" style={{width:'450px',height:'300px'}}/>
+    <img className="img" src={SD} alt="" style={{width:'450px',height:'300px'}}/>
     <p>
     Want to tell your love story in a special way? We offer both story-based and non-story-based options, so you can choose the one that best fits your style and preferences. Our personalized save-the-date video will capture your love story in a beautiful way and help you keep your memory forever alive.
     </p>
@@ -50,7 +54,7 @@ const provide = () => {
     icon={<MdInsertInvitation/>}
   >
     <h3 className="vertical-timeline-element-title mb-2">Wardrobe planner</h3>
-    <img className="img" src={img1} alt="" style={{width:'450px',height:'300px'}}/>
+    <img className="img" src={WR} alt="" style={{width:'450px',height:'300px'}}/>
     <p>
     Planning the perfect wedding wardrobe is an essential part of the wedding planning process. With so many details to consider, it's a relief to have a professional wedding wardrobe planner to help make the process a breeze! From selecting the perfect dress to accessorizing with the right jewellery and shoes, we've got you covered!
     </p>
@@ -64,7 +68,7 @@ const provide = () => {
     icon={<MdInsertInvitation/>}
   >
     <h3 className="vertical-timeline-element-title mb-2">Wedding Invitation</h3>
-    <img className="img" src={img1} alt="" style={{width:'450px',height:'300px'}}/>
+    <img className="img" src={WI} alt="" style={{width:'450px',height:'300px'}}/>
     <p>
     Leave a lasting impression on your guests with our personalized wedding invitation video. Our expert editors create a video that perfectly captures the essence of your love story and gives your guests all the important information about your wedding day.
     </p>

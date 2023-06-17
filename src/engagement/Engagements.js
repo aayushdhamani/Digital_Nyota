@@ -47,33 +47,37 @@ const Engagements = () => {
   
   return (
     <div>
-      
-      <div className="page page9">
-        
-      {data?.map((harsh, index) => (
- <div
- className="d-flex flex-column m-3 p-5"
- key={index}
- onMouseEnter={() => handleMouseEnter(index)}
- onMouseLeave={() => handleMouseLeave(index)}
+    <div className="page page9">
+    <div className="container d-flex flex-wrap justify-content-between align-items-center">
+ {data?.map((harsh, index) => (
+<div
+className="row d-flex flex-column my-5 col-md-4"
+key={index}
+onMouseEnter={() => handleMouseEnter(index)}
+onMouseLeave={() => handleMouseLeave(index)}
+
 >
- <video
-   ref={ref => (videoRefs.current[index] = ref)}
-   width="350px"
-   height="450px"
-   border-radius="25px"
- >
-   <source
-     src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}
-     type="video/mp4"
-   />
-   Your browser does not support the video tag.
- </video>
+<video
+//  className="card"
+ref={ref => (videoRefs.current[index] = ref)}
+width="300px"
+height="450px"
+
+>
+<source
+
+  src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}
+  type="video/mp4"
+/>
+Your browser does not support the video tag.
+</video>
 </div>
 ))}
-      </div>
-      </div>
-  )
+ </div>
+ </div>
+ </div>
+)
 }
+
 
 export default Engagements

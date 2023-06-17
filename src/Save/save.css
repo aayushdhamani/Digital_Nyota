@@ -26,7 +26,9 @@
     border-radius: 8px;
    }
 @media (max-width: 600px) {
-
+.page5{
+  height:10100px;
+}
    }
    
    @media (min-width: 601px) and (max-width: 1024px) {
@@ -36,7 +38,7 @@
    
    @media (min-width: 1025px) {
     .page5{
-height:4000px;
+height:3400px;
     }
     .video{
         border-radius: 15px;

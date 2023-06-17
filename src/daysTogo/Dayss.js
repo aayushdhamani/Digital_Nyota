@@ -1,7 +1,7 @@
 import React, { useState ,useEffect } from "react"
 import "./days.css";
 // import Imgcard from "./imgcard";
-import './imgcard.css';
+// import './imgcard.css';
 const Dayss = () => {
     
   const [data,SetData]= useState([]);

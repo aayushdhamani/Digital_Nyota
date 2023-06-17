@@ -18,10 +18,10 @@
     .icons{
         margin-bottom:20px;
     }
-    /* .footer{
-        margin-top:70px;
-        margin-bottom:50px;
-    } */
+    .footer{
+        margin-top:10px;
+        margin-bottom:0px;
+    }
     
   }
   @media(max-width:1024px){

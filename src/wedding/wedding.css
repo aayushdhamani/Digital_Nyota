@@ -1,14 +1,18 @@
 
   
 @media (max-width: 600px) {
-    .page4{
-     height:7400px;
+    .page12{
+     height:9400px;
+    }
+    .row{
+      padding-right:25px;
+      margin-top:25px;
     }
     
    }
    
    @media (min-width: 601px) and (max-width: 1024px) {
-     .page4{
+     .page12{
          height:3550px;
      }
      
@@ -16,7 +20,7 @@
    
    @media (min-width: 1025px) {
     .page12{
-     height:3700px;
+     height:3230px;
     }
    
    }

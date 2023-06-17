@@ -2,21 +2,30 @@
   
 @media (max-width: 600px) {
     .page13{
-     height:7400px;
+     height:8750px;
     }
-    
+    .row{
+      padding-left:22px;
+    }
    }
    
    @media (min-width: 601px) and (max-width: 1024px) {
      .page13{
-         height:3550px;
+         height:3250px;
      }
      
    }
    
    @media (min-width: 1025px) {
     .page13{
-     height:3700px;
+     height:3300px;
+    }
+    .row{
+      padding-left:5px;
     }
     
    }
+   /* .card{
+    border-radius: 10px; 
+    overflow: hidden;
+   } */

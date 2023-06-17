@@ -1,48 +1,27 @@
-
 .scrollable-container {
-   overflow-x: auto;
-   white-space: nowrap;
-   padding: 20px 0;
- }
- 
- .page12 {
-   display: inline-block;
- }
-   @media (max-width: 600px) {
- 
-   
- 
- }
- @media (min-width:601px) and (max-width:1023px){
-
- }
- 
- @media (min-width: 1024px) {
-    .page12{
-    height:200px;
-    }
- }
-
- .scrollable-container {
-  overflow-x: scroll;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px 0;
 }
 
-.page12 {
-  display: flex;
+.bg-image {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.page12::-webkit-scrollbar {
-  height: 8px;
-  background-color: #f5f5f5;
+.video-container.animate video {
+  /* Add your desired animation properties here */
+  animation: videoAnimation 1s ease;
 }
 
-.page12::-webkit-scrollbar-thumb {
-  background-color: #000000;
-  border-radius: 4px;
+@keyframes videoAnimation {
+  /* Add your desired animation keyframes here */
+  /* Example keyframes for opacity animation */
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-.page12::-webkit-scrollbar-thumb:hover {
-  background-color: #555555;
-}
-
- 

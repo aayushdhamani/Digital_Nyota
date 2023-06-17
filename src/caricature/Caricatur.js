@@ -45,21 +45,24 @@ const Caricatur = () => {
   return (
     <div>
     <div className="page page13">
-    <div className="d-flex flex-wrap justify-content-between align-items-center">
+    <div className="container d-flex flex-wrap justify-content-between align-items-center">
     {data?.map((harsh, index) => (
  <div
- className="d-flex flex-column m-3"
+ className="row d-flex flex-column my-5 col-md-4"
  key={index}
  onMouseEnter={() => handleMouseEnter(index)}
  onMouseLeave={() => handleMouseLeave(index)}
+ 
 >
  <video
+//  className="card"
    ref={ref => (videoRefs.current[index] = ref)}
-   width="350px"
+   width="300px"
    height="450px"
-   border-radius="25px"
+  
  >
    <source
+   
      src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}
      type="video/mp4"
    />

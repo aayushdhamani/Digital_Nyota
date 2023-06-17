@@ -44,33 +44,36 @@ const Weddingss = () => {
 
   return (
     <div>
-      <div className="page page12">
-        <div className="d-flex flex-wrap justify-content-between align-items-center p-5">
-          {data?.map((harsh, index) => (
-            <div
-              className="d-flex flex-column m-3"
-              key={index}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={() => handleMouseLeave(index)}
-            >
-              <video
-                ref={ref => (videoRefs.current[index] = ref)}
-                width="350px"
-                height="450px"
-                style={{ borderRadius: '25px' }}
-              >
-                <source
-                  src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+    <div className="page page12">
+    <div className="container d-flex flex-wrap justify-content-between align-items-center">
+ {data?.map((harsh, index) => (
+<div
+className="row d-flex flex-column my-5 col-md-4"
+key={index}
+onMouseEnter={() => handleMouseEnter(index)}
+onMouseLeave={() => handleMouseLeave(index)}
+
+>
+<video
+//  className="card"
+ref={ref => (videoRefs.current[index] = ref)}
+width="300px"
+height="450px"
+
+>
+<source
+
+  src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}
+  type="video/mp4"
+/>
+Your browser does not support the video tag.
+</video>
+</div>
+))}
+ </div>
+ </div>
+ </div>
+)
+}
 
 export default Weddingss;

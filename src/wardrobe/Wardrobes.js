@@ -35,11 +35,11 @@ const Wardrobes = () => {
         <div className="page page7">
         <div className=" container">
 
-       <div className="row">
+       {/* <div className="row"> */}
 
        
       <div className=' d-flex col-md-4'>
-      <div className="d-flex flex-wrap justify-content-between align-items-center">
+      <div className=" groom d-flex flex-wrap justify-content-between align-items-center">
 
 {data?.map((harsh, index) => {
   console.log(harsh?.image);
@@ -59,7 +59,7 @@ const Wardrobes = () => {
 </div>
       </div>
       </div>
-      </div>
+      {/* </div> */}
     </div>
 
   )
