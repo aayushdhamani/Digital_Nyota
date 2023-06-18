@@ -55,18 +55,16 @@ onMouseLeave={() => handleMouseLeave(index)}
 
 >
 <video
-//  className="card"
-ref={ref => (videoRefs.current[index] = ref)}
-width="300px"
-height="450px"
 
+ref={ref => (videoRefs.current[index] = ref)}
+width="280px"
+height="450px"
+className="save-video"
 >
 <source
-
   src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}
   type="video/mp4"
 />
-Your browser does not support the video tag.
 </video>
 </div>
 ))}

@@ -6,9 +6,9 @@ const header = () => {
   return (
     <>
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor:'#ffffff',fontSize:'10px'}} >
+      <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor:'#0f6d53',fontSize:'10px'}} >
   <div className="container-fluid">
-   <img src={logo} style={{width:'110px',height:'70px', marginLeft:'30px'}} alt="" />
+   <a href="/"><img  src={logo} style={{width:'110px',height:'70px', marginLeft:'30px',borderRadius:"15px"}} alt="" /></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

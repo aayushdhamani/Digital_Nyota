@@ -18,17 +18,17 @@
     font-size:2.2em;
  }
  .contact-text{
-    color: black;
+   font-size:1.2em;
  }
- .container-form {
-    margin-left:10px;
- }
+ /* .container-form {
+    margin-left:0px;
+ } */
  .formbtn{
-    margin-left:100px;
+    margin-left:110px;
     color:white;
  }
  .wtsbtn{
-    padding-left:50px;
+    padding-left:70px;
  }
  .page2 {
    height: 900px; /* Adjust the height for page 2 */
@@ -36,8 +36,8 @@
  .btn2{
    color:white;
 }
- 
-}
+
+  }
 
 
 @media (min-width: 601px) and (max-width: 1024px) {

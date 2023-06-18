@@ -1,11 +1,25 @@
 
+.image-card {
+  display: flex;
+  flex-wrap: wrap;
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 5px 15px #0f6d53;
+   
+  }
   
 @media (max-width: 600px) {
    .page4{
     height:6500px;
    }
    .day{
-    padding-left:10px;
+    padding-left:35px;
+  }
+  .heading{
+    font-size:1.8em;
   }
   }
   
@@ -13,33 +27,37 @@
     .page4{
         height:4000px;
     }
+    /* .day{
+      display: flex;
+      flex:wrap;
+    } */
     
   }
   
   @media (min-width: 1025px) {
    .page4{
-    height:1800px;
+    height:4800px;
    }
    .heading{
     font-Size:2.2em;
    }
    .day{
-    padding-left:65px;
+    padding-left:30px;
   }
   
   }
 
   .image-container {
-    max-width: 280px; /* Set the maximum width of the image container */
+    max-width: 280px; 
   }
   
   .responsive-image {
-    /* width: 100%; Set width to 100% of the container */
-    height: auto; /* Allow the height to adjust automatically */
-    transition: transform 0.3s; /* Add a transition effect to the transform property */
+  
+    height: auto;
+    transition: transform 0.3s; 
   }
   
   .responsive-image:hover {
-    transform: translateY(-10px); /* Move the image up by 10 pixels on hover */
+    transform: translateY(-10px); 
   }
   

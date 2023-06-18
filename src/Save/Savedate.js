@@ -140,7 +140,7 @@ const Savedate = () => {
 
   return (
     <div className="page page5">
-      <div style={{ fontSize: "20px" }}>
+      <div style={{ fontSize: "20px" ,marginTop:'22px'}}>
         <p
           className="heading text-center fw-bold"
           style={{ color: "white", backgroundColor: "#0f6d53" }}
@@ -152,15 +152,16 @@ const Savedate = () => {
         <div className="d-flex flex-wrap justify-content-between align-items-center p-4">
           {data?.map((harsh, index) => (
             <div
-              className=" save d-flex flex-column my-5"
+              className=" save d-flex flex-column my-3 col-md-4"
               key={index}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             >
               <video
                 ref={(ref) => (videoRefs.current[index] = ref)}
-                width="250px"
-                height="450px"
+                width="280px"
+                // height="450px"
+              className="save-video"
               >
                 <source
                   src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}
@@ -181,17 +182,17 @@ const Savedate = () => {
       </div>
 
 
-       <div className="d-flex flex-wrap justify-content-between align-items-center">
+       <div className="save2 d-flex flex-wrap justify-content-between align-items-center">
 
 {datas?.map((harsh, index) => {
   console.log(harsh?.image);
   return (
-    <div className=" save2 d-flex column m-4">
+    <div className="  d-flex flex-column my-3 col-md-4 ">
       <img
         alt="not found"
         width={"250px"}
         height={"auto"}
-        className="border border-dark responsive-image"
+        className="image-card responsive-image"
         src={`https://backend-production-e1c2.up.railway.app/${harsh?.image}`}
       />
     </div>

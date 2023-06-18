@@ -2,8 +2,6 @@ import "./contact.css";
 import React, {useState} from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
-
-
 const Contact = () => {
  
   const [user,setUser]=useState({
@@ -69,7 +67,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="row container mb-5">
-          <div className="col-md-6" style={{ fontSize: "20px" }}>
+          <div className="thanku col-md-6" style={{ fontSize: "20px" }}>
             <p
               className="contact-text text-start "
               style={{ color: "#0f6d53" }}

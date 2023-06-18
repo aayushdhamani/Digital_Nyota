@@ -49,6 +49,8 @@ const Homewarming = () => {
        <div className="container d-flex flex-wrap justify-content-between align-items-center">
     {data?.map((harsh, index) => (
  <div
+ 
+
  className="row d-flex flex-column my-5 col-md-4"
  key={index}
  onMouseEnter={() => handleMouseEnter(index)}
@@ -56,11 +58,10 @@ const Homewarming = () => {
  
 >
  <video
-//  className="card"
    ref={ref => (videoRefs.current[index] = ref)}
    width="300px"
    height="450px"
-  
+   className="save-video"
  >
    <source
    

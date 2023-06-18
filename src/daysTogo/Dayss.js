@@ -133,7 +133,7 @@ const Dayss = () => {
   return (
     <>
     <div className="page page4">
-    <div style={{ fontSize: "20px" }}>
+    <div style={{ fontSize: "20px" ,marginTop:'22px'}}>
           <p
             className="heading text-center fw-bold"
             style={{ color: "white",backgroundColor:"#0f6d53" }}
@@ -141,17 +141,17 @@ const Dayss = () => {
             Creative days to go
           </p>
         </div>
-        <div className="d-flex flex-wrap justify-content-between align-items-center">
+        <div className="container d-flex flex-wrap justify-content-between align-items-center">
 
 {data?.map((harsh, index) => {
   console.log(harsh?.image);
   return (
-    <div className="day d-flex column m-4">
+    <div className="day d-flex flex-column my-3 col-md-3">
       <img
         alt="not found"
         width={"250px"}
         height={"auto"}
-        className="border border-dark responsive-image"
+        className="image-card responsive-image"
         src={`https://backend-production-e1c2.up.railway.app/${harsh?.image}`}
       />
     </div>
@@ -163,23 +163,23 @@ const Dayss = () => {
 
 <div style={{ fontSize: "20px" }}>
           <p
-            className="heading text-center fw-bold"
-            style={{ color: "white",backgroundColor:"#0f6d53" }}
+            className="heading text-center fw-bold my-2"
+            style={{ color: "white",backgroundColor:"#0f6d53"}}
           >
             Pictures days to go
           </p>
-          <div className="d-flex flex-wrap justify-content-between align-items-center   ">
+          <div className="container d-flex flex-wrap justify-content-between align-items-center   ">
           {datas?.map((harsh, index) => {
           // debugger;
     console.log(harsh?.image,"harsh");
     return (
 
       
-        <div  className="day d-flex column m-4">
+        <div  className="day d-flex flex-column my-3 col-md-3">
 
             <img alt="not found" width={"250px"}
         height={"auto"}
-        className="border border-dark responsive-image" src={`https://backend-production-e1c2.up.railway.app/${harsh?.image}`}   />
+        className="image-card responsive-image" src={`https://backend-production-e1c2.up.railway.app/${harsh?.image}`}   />
            
              </div>
     )

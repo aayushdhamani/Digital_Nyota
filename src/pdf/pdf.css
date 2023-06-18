@@ -11,6 +11,7 @@
 
 .pdf-page {
   background-color: #0f6d53 ;
+  box-shadow: 0 5px 15px #0f6d53;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   border-radius: 8px;
   /* overflow: hidden; */

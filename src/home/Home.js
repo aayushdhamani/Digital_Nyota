@@ -105,7 +105,7 @@ const Home = () => {
                     ref={ref => (videoRefs.current[index] = ref)}
                     width="350px"
                     height="450px"
-                    style={{ borderRadius: '25px' }}
+              // className='save-video'
                   >
                     <source
                       src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}

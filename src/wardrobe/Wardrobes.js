@@ -49,7 +49,7 @@ const Wardrobes = () => {
         alt="not found"
         width={"250px"}
         height={"auto"}
-        className="border border-dark responsive-image"
+        className="image-card responsive-image"
         src={`https://backend-production-e1c2.up.railway.app/${harsh?.image}`}
       />
     </div>

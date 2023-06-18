@@ -1,7 +1,7 @@
 
 
   
-  .delicacies-row {
+  /* .delicacies-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,15 +16,18 @@
 
 
   }
-  
-  @media screen and (max-width: 768px) {
+   */
+  /* @media screen and (max-width: 768px) {
     .delicacies-row {
       justify-content: center; 
     }
   }
    .video{
     border-radius: 8px;
-   }
+   } */
+   .save-video{
+    box-shadow: 0 5px 15px #0f6d53;
+  }
 @media (max-width: 600px) {
 .page5{
   height:10100px;
@@ -44,11 +47,18 @@
    
    @media (min-width: 1025px) {
     .page5{
-height:3400px;
+height:4000px;
     }
     .video{
         border-radius: 15px;
         height:450px;
         width:250px;
     }
+    .save{
+      padding-left:75px;
+    }
+    .save2{
+      padding-left:175px;
+    }
+    
    }
