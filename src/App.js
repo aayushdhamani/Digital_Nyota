@@ -12,9 +12,7 @@ import Engagement from './engagement/Engagements.js';
 import Pdf from './pdf/pdf.js';
 import Housewarming from './housewarming/Homewarming';
 import Couple from './couple/Couples';
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Days from "./daysTogo/days.js";
 import Dayss from "./daysTogo/Dayss";
 import Weddingss from "./wedding/Weddingss";
 import Caricatur from "./caricature/Caricatur";

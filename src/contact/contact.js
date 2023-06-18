@@ -42,12 +42,7 @@ const Contact = () => {
              throw Error(response.error)
    
            }
-          //  console.log(response);
-          //  console.log(response);
-          //  toast.success(response?.message)
-           // setMessage(response);
-          //  navigate("/sign-in")
-   
+      
          })
          .catch((error) => {
           //  console.log(error);

@@ -20,9 +20,7 @@
  .contact-text{
    font-size:1.2em;
  }
- /* .container-form {
-    margin-left:0px;
- } */
+
  .formbtn{
     margin-left:110px;
     color:white;
@@ -90,7 +88,7 @@
     border-radius: 20px;
 }
 .page2 {
-   height: 1000px; /* Adjust the height for page 2 */
+   height: 1000px; 
  }
   
 }

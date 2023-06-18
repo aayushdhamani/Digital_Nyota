@@ -1,6 +1,6 @@
 import React, { useState ,useEffect} from 'react';
 import './wardrobe.css';
-import img from './groom.jpg';
+
 
 const Wardrobes = () => {
   const [data, setData] = useState([]);
@@ -35,7 +35,7 @@ const Wardrobes = () => {
         <div className="page page7">
         <div className=" container">
 
-       {/* <div className="row"> */}
+   
 
        
       <div className=' d-flex col-md-4'>
@@ -59,7 +59,7 @@ const Wardrobes = () => {
 </div>
       </div>
       </div>
-      {/* </div> */}
+ 
     </div>
 
   )

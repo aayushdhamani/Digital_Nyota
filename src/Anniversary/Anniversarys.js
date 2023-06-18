@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './anniversary.css';
 
-// import V1 from './video.mp4'; 
 const Anniversarys = () => {
   const [data,SetData]=useState([])
   const videoRefs = useRef([]);
@@ -20,7 +19,6 @@ const Anniversarys = () => {
   })
     .then(response => response.json())
     .then(response => {
-      // dispatch(datasImage(response))
         SetData(response?.videos);
         console.log(response);
     })
