@@ -51,18 +51,17 @@ const Engagements = () => {
     <div className="container d-flex flex-wrap justify-content-between align-items-center">
  {data?.map((harsh, index) => (
 <div
-className="row d-flex flex-column my-5 col-md-4"
+className="row d-flex flex-column my-5 col-md-4 p-4"
 key={index}
 onMouseEnter={() => handleMouseEnter(index)}
 onMouseLeave={() => handleMouseLeave(index)}
 
 >
 <video
-
 ref={ref => (videoRefs.current[index] = ref)}
 width="300px"
 height="450px"
-
+className='save-video'
 >
 <source
 

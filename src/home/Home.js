@@ -90,11 +90,11 @@ const Home = () => {
   return (
     <ParallaxProvider>
       <div className="home-container">
-        <div className="scrollable-container bg-image">
-          <div className="d-flex flex-nowrap p-5 m-2">
+        <div className="scrollable-container2 bg-image2 ">
+          <div className="d-flex flex-nowrap">
             {data?.map((harsh, index) => (
               <div
-                className="d-flex flex-column m-1"
+                className=" home d-flex flex-column "
                 key={index}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
@@ -104,8 +104,8 @@ const Home = () => {
                   <video
                     ref={ref => (videoRefs.current[index] = ref)}
                     width="350px"
-                    height="450px"
-              // className='save-video'
+                    // height="500px"
+              className='save-video'
                   >
                     <source
                       src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}

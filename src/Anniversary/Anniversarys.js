@@ -59,7 +59,7 @@ const Anniversarys = () => {
    ref={ref => (videoRefs.current[index] = ref)}
    width="300px"
    height="450px"
-  
+  className='save-video'
  >
    <source
    

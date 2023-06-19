@@ -51,7 +51,7 @@ const Dayss = () => {
   
   return (
     <>
-    <div className="page page4">
+    <div className="scrollable-container bg-image">
     <div style={{ fontSize: "20px" ,marginTop:'22px'}}>
           <p
             className="heading text-center fw-bold"

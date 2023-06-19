@@ -33,18 +33,13 @@ const Wardrobes = () => {
     };
   return (
         <div className="page page7">
-        <div className=" container">
-
-   
-
-       
-      <div className=' d-flex col-md-4'>
-      <div className=" groom d-flex flex-wrap justify-content-between align-items-center">
+        <div className=" container">     
+      <div className=" d-flex flex-wrap justify-content-between align-items-center">
 
 {data?.map((harsh, index) => {
   console.log(harsh?.image);
   return (
-    <div className=" ward d-flex column m-4">
+    <div className=" ward d-flex flex-column column m-4">
       <img
         alt="not found"
         width={"250px"}
@@ -59,8 +54,7 @@ const Wardrobes = () => {
 </div>
       </div>
       </div>
- 
-    </div>
+
 
   )
 }

@@ -7,7 +7,7 @@ const Homewarming = () => {
     const debounceTimeout = useRef(null);
 
   useEffect(() => {
-    fetch('https://backend-production-e1c2.up.railway.app/api/video/getallvideo7', {
+    fetch('https://backend-production-e1c2.up.railway.app/api/video/getallvideo8', {
       method: 'GET',
       headers: {
         'content-type': 'application/json',

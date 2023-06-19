@@ -44,7 +44,7 @@ const Caricatur = () => {
       };
   return (
     <div>
-    <div className="page page13">
+    <div className="scrollable-container bg-image">
     <div className="container d-flex flex-wrap justify-content-between align-items-center">
     {data?.map((harsh, index) => (
  <div

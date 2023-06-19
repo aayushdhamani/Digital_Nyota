@@ -8,7 +8,7 @@ import LocalPdf5 from './pdf5.pdf';
 
 const Pdf = () => {
   return (
-    <div className="page page16">
+    <div className="scrollable-container bg-image">
 
     <div className="pdf-container">
       <div className="pdf-pages container">

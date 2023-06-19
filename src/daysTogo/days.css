@@ -2,7 +2,7 @@
 .image-card {
   display: flex;
   flex-wrap: wrap;
-    width: 280px;
+    width: 250px;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
@@ -16,7 +16,7 @@
     height:6500px;
    }
    .day{
-    padding-left:35px;
+    padding-left:50px;
   }
   .heading{
     font-size:1.8em;

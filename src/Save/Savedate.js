@@ -74,8 +74,8 @@ const Savedate = () => {
   };
 
   return (
-    <div className="page page5">
-      <div style={{ fontSize: "20px" ,marginTop:'22px'}}>
+    <div className="scrollable-container bg-image">
+      <div style={{ fontSize: "20px" }}>
         <p
           className="heading text-center fw-bold"
           style={{ color: "white", backgroundColor: "#0f6d53" }}
@@ -116,13 +116,13 @@ const Savedate = () => {
         </p>
       </div>
 
-
-       <div className="save2 d-flex flex-wrap justify-content-between align-items-center">
+      <div className="container">
+       <div className=" d-flex flex-wrap justify-content-between align-items-center ">
 
 {datas?.map((harsh, index) => {
   console.log(harsh?.image);
   return (
-    <div className="  d-flex flex-column my-3 col-md-4 ">
+    <div className="save2 d-flex flex-column my-3 col-md-4 ">
       <img
         alt="not found"
         width={"250px"}
@@ -135,6 +135,7 @@ const Savedate = () => {
 })}
 
 </div>
+      </div>
       </div>
   
   );

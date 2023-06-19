@@ -1,6 +1,8 @@
   
 @media (max-width: 600px) {
-   
+  .page8{
+    height:1500px;
+   }
    }
    
    @media (min-width: 601px) and (max-width: 1024px) {
@@ -9,7 +11,7 @@
    
    @media (min-width: 1025px) {
    .page8{
-    height:625px;
+    height:1500px;
    }
    .row{
     padding-left:65px;
