@@ -67,7 +67,7 @@ const Contact = () => {
               className="contact-text text-start "
               style={{ color: "#0f6d53" }}
             >
-              Thank you for considering Digital Nyota
+              Thank you for considering Digital Nyota!
             </p>
           </div>
           <div

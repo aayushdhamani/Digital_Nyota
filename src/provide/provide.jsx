@@ -7,6 +7,7 @@ import img1 from './9.jpg';
 import { RxCountdownTimer } from 'react-icons/rx';
 import { MdInsertInvitation } from 'react-icons/md';
 import { BsHouseDoor } from 'react-icons/bs';
+import s1 from './slider1.jpg';
 import WI from './WeddingInvitation.png'
 import CD from './Coutdown.png';
 import SD from './Save the date.png';
@@ -16,6 +17,29 @@ const provide = () => {
   return (
    <>
    <div className="page page3">
+    {/* <div className="container" style={{marginTop:'25px'}}> */}
+   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={s1} class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={s1} class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={s1} class="d-block w-100" alt="..."/>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{/* </div> */}
    <VerticalTimeline lineColor='#0f6d53'>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"

@@ -12,7 +12,10 @@ const footer = () => (
             <div className="row">
                 <div className="icons col-md-6 ">
                     <FaInstagram className="icon instagram" />
-                    <FaWhatsapp className="icon whatsapp" />
+                    <a
+            href="https://wa.me/8387801336?text=Hello%20from%20my%20website!"
+            target="_blank"
+          > <FaWhatsapp className="icon whatsapp" /></a>
                     <FaPinterestP className="icon pinterest" />
 
                 </div>

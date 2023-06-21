@@ -25,10 +25,10 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Home />} />        
+          <Route path="/whatweprovide" element={<Home />} />        
             <Route  path="/about" element={<About />} />
             <Route  path="/contact" element={<Contact />} />
-            <Route  path="/whatweprovide" element={<Provide />} />
+            <Route  path="/" element={<Provide />} />
             <Route  path="/days" element={<Dayss />} />
             <Route  path="/save" element={<Save />} />
             <Route  path="/wardrobe" element={<Wardrobe />} />

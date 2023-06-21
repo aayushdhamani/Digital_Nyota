@@ -15,16 +15,16 @@ const header = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" style={{marginRight:'100px'}} aria-current="page" href="/">Home</a>
+          <a className="nav-link active" style={{marginRight:'100px',color:'white'}} aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" style={{marginRight:'100px'}} aria-current="page" href="/about">About us</a>
+          <a className="nav-link active" style={{marginRight:'100px',color:'white'}} aria-current="page" href="/about">About us</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" style={{marginRight:'100px'}} aria-current="page" href="/contact">Contact us</a>
+          <a className="nav-link active" style={{marginRight:'100px',color:'white'}} aria-current="page" href="/contact">Contact us</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/whatweprovide">What We Provide</a>
+          <a className="nav-link active" style={{color:'white'}} aria-current="page" href="/whatweprovide">What We Provide</a>
         </li>
        
       </ul>
